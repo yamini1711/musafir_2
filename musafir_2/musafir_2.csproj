@@ -1,0 +1,1486 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{728995ED-DFF4-41DC-BF8B-E78164B8C1D5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>musafir_2</RootNamespace>
+    <AssemblyName>musafir_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44328</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="a1_iternary.aspx" />
+    <Content Include="a2.aspx" />
+    <Content Include="a3.aspx" />
+    <Content Include="about_us.aspx" />
+    <Content Include="admin_login.aspx" />
+    <Content Include="admin_table.aspx" />
+    <Content Include="admin_table_insert.aspx" />
+    <Content Include="advnoida1.aspx" />
+    <Content Include="agrafort1.aspx" />
+    <Content Include="agramathuravrindavan1.aspx" />
+    <Content Include="agra_home.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="auli.aspx" />
+    <Content Include="banglore_munnar.aspx" />
+    <Content Include="bhopal1.aspx" />
+    <Content Include="bhopal2.aspx" />
+    <Content Include="bhopal_home.aspx" />
+    <Content Include="bill.aspx" />
+    <Content Include="bill1.aspx" />
+    <Content Include="bill2.aspx" />
+    <Content Include="bill_page.aspx" />
+    <Content Include="bill_page2.aspx" />
+    <Content Include="bill_page3.aspx" />
+    <Content Include="bill_page4.aspx" />
+    <Content Include="bill_table.aspx" />
+    <Content Include="camelsafari_jodhpur.aspx" />
+    <Content Include="contact_us.aspx" />
+    <Content Include="culturalvaranasi3.aspx" />
+    <Content Include="desert_jodhpur.aspx" />
+    <Content Include="dynamic_jaipur.aspx" />
+    <Content Include="fatehpuragra4.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="feedback_1.aspx" />
+    <Content Include="feedback_2.aspx" />
+    <Content Include="feedback_table.aspx" />
+    <Content Include="foodwalkvaranasi2.aspx" />
+    <Content Include="footer.aspx" />
+    <Content Include="forget_password.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="h1.aspx" />
+    <Content Include="h2.aspx" />
+    <Content Include="h3.aspx" />
+    <Content Include="halfdayvaranasi4.aspx" />
+    <Content Include="halfday_jaisalmer.aspx" />
+    <Content Include="haridwar.aspx" />
+    <Content Include="header.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="home2.aspx" />
+    <Content Include="homestay_munnar.aspx" />
+    <Content Include="images\0 %281%29.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\123.jpg" />
+    <Content Include="images\1m.jpg" />
+    <Content Include="images\1n.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2h.jpg" />
+    <Content Include="images\2m.jpg" />
+    <Content Include="images\2n.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\3m.jpg" />
+    <Content Include="images\4m.jpg" />
+    <Content Include="images\a1.jpeg" />
+    <Content Include="images\a3.jpg" />
+    <Content Include="images\a4.jpg" />
+    <Content Include="images\aagmath.jpg" />
+    <Content Include="images\aboutus.png" />
+    <Content Include="images\ad2.jpg" />
+    <Content Include="images\advnoida.jpg" />
+    <Content Include="images\agrafo.jpg" />
+    <Content Include="images\agrafort.jpg" />
+    <Content Include="images\alang.jpg" />
+    <Content Include="images\amv.jpg" />
+    <Content Include="images\at.jpg" />
+    <Content Include="images\auli.jpg" />
+    <Content Include="images\b1.jpeg" />
+    <Content Include="images\bho1.jpeg" />
+    <Content Include="images\camp %281%29.jpg" />
+    <Content Include="images\card1.jpeg" />
+    <Content Include="images\card2.jpeg" />
+    <Content Include="images\cc.jpg" />
+    <Content Include="images\co.jpg" />
+    <Content Include="images\cochi %281%29.jpeg" />
+    <Content Include="images\cu1.jpg" />
+    <Content Include="images\cu2.jpg" />
+    <Content Include="images\cu3.jpg" />
+    <Content Include="images\cucu.png" />
+    <Content Include="images\culture.jpg" />
+    <Content Include="images\culturevaranasi.jpg" />
+    <Content Include="images\del1.jpg" />
+    <Content Include="images\download.jpg" />
+    <Content Include="images\fateh.jpg" />
+    <Content Include="images\food.jpg" />
+    <Content Include="images\fortt.jpg" />
+    <Content Include="images\ganga.jpg" />
+    <Content Include="images\gateway-of-india-in-mumbai-ameya-m.jpg" />
+    <Content Include="images\h1.jpeg" />
+    <Content Include="images\h1.jpg" />
+    <Content Include="images\h2.jpg" />
+    <Content Include="images\h3.jpg" />
+    <Content Include="images\halfdaysarnath.jpg" />
+    <Content Include="images\halfvaranasi.jpg" />
+    <Content Include="images\HARIDWAR.jpg" />
+    <Content Include="images\hm.jpg" />
+    <Content Include="images\img1.jpeg" />
+    <Content Include="images\img10.jpeg" />
+    <Content Include="images\img2.jpeg" />
+    <Content Include="images\img3.jpeg" />
+    <Content Include="images\img4.jpeg" />
+    <Content Include="images\img5.jpeg" />
+    <Content Include="images\img6.jpeg" />
+    <Content Include="images\img7.jpeg" />
+    <Content Include="images\img8.jpeg" />
+    <Content Include="images\img9.jpeg" />
+    <Content Include="images\indore2.jpeg" />
+    <Content Include="images\indore4.jpeg" />
+    <Content Include="images\inodre1.jpeg" />
+    <Content Include="images\istockphoto-880969326-612x612.jpg" />
+    <Content Include="images\j1.jpeg" />
+    <Content Include="images\j2.jpeg" />
+    <Content Include="images\j3.jpeg" />
+    <Content Include="images\j4 %282%29.jpeg" />
+    <Content Include="images\j4.jpeg" />
+    <Content Include="images\ja.jpeg" />
+    <Content Include="images\ja1.jpeg" />
+    <Content Include="images\ja3.jpeg" />
+    <Content Include="images\ja4.jpeg" />
+    <Content Include="images\jai1.jpeg" />
+    <Content Include="images\jaipur_pushkar.jpeg" />
+    <Content Include="images\jaipur_udaipur.jpeg" />
+    <Content Include="images\jaisalmer2.jpeg" />
+    <Content Include="images\jaisalmer3.jpeg" />
+    <Content Include="images\jas1 %283%29.jpeg" />
+    <Content Include="images\jo1.jpeg" />
+    <Content Include="images\jo2 %282%29.jpeg" />
+    <Content Include="images\jo2.jpeg" />
+    <Content Include="images\jo3.jpeg" />
+    <Content Include="images\jo4.jpeg" />
+    <Content Include="images\jodhpur.jpeg" />
+    <Content Include="images\jodhpur2.jpeg" />
+    <Content Include="images\jodhpur3.jpeg" />
+    <Content Include="images\jodhpur4.jpeg" />
+    <Content Include="images\jodhpur_city.jpeg" />
+    <Content Include="images\k.jpg" />
+    <Content Include="images\k1.jpeg" />
+    <Content Include="images\k1.jpg" />
+    <Content Include="images\k2.jpg" />
+    <Content Include="images\k4.jpg" />
+    <Content Include="images\ke1 %282%29.jpeg" />
+    <Content Include="images\kempty-falls-mussoorie-india-harjit-toor.jpg" />
+    <Content Include="images\kerla1 %282%29.jpeg" />
+    <Content Include="images\ko.jpeg" />
+    <Content Include="images\ko1 %282%29.jpeg" />
+    <Content Include="images\kt.jpg" />
+    <Content Include="images\land_delhi.jpg" />
+    <Content Include="images\login_img.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\lonav %281%29.jpg" />
+    <Content Include="images\lonav.jpg" />
+    <Content Include="images\lonavala.jpeg" />
+    <Content Include="images\lonavala.jpg" />
+    <Content Include="images\m1.jpeg" />
+    <Content Include="images\m1home %282%29 %281%29.jpeg" />
+    <Content Include="images\m1home %282%29.jpeg" />
+    <Content Include="images\ma %281%29.jpg" />
+    <Content Include="images\ma.jpg" />
+    <Content Include="images\math.jpg" />
+    <Content Include="images\mathura.jpg" />
+    <Content Include="images\mathuraagra.jpg" />
+    <Content Include="images\mathuravrindavan.jpg" />
+    <Content Include="images\mausalemagra.jpg" />
+    <Content Include="images\mountain %281%29.jpg" />
+    <Content Include="images\mountain.jpg" />
+    <Content Include="images\mp1 %281%29.jpeg" />
+    <Content Include="images\mp1.jpeg" />
+    <Content Include="images\mp4.jpeg" />
+    <Content Include="images\Mp5.jpeg" />
+    <Content Include="images\muba6.jpeg" />
+    <Content Include="images\mum1.jpeg" />
+    <Content Include="images\mum1.jpg" />
+    <Content Include="images\mum11.jpeg" />
+    <Content Include="images\mum21.jpeg" />
+    <Content Include="images\mum3.jpeg" />
+    <Content Include="images\mum4.jpeg" />
+    <Content Include="images\mumb5.jpeg" />
+    <Content Include="images\mun1 %282%29.jpeg" />
+    <Content Include="images\mun1.jpeg" />
+    <Content Include="images\mun2.jpg" />
+    <Content Include="images\munnar.jpg" />
+    <Content Include="images\musafir %281%29.png" />
+    <Content Include="images\musafir_logo.png" />
+    <Content Include="images\mussoorie.jpg" />
+    <Content Include="images\mystery.jpg" />
+    <Content Include="images\mysteryroom.jpg" />
+    <Content Include="images\n.jpg" />
+    <Content Include="images\n1.jpg" />
+    <Content Include="images\n2.jpg" />
+    <Content Include="images\nainital-lake-dilip-gupta.jpg" />
+    <Content Include="images\nas.jpg" />
+    <Content Include="images\nash.jpg" />
+    <Content Include="images\nashik.jpg" />
+    <Content Include="images\noida.jpeg" />
+    <Content Include="images\noida.jpg" />
+    <Content Include="images\noidarock.jpg" />
+    <Content Include="images\om1.jpeg" />
+    <Content Include="images\om21.jpeg" />
+    <Content Include="images\om_1.jpg" />
+    <Content Include="images\om_2.jpg" />
+    <Content Include="images\om_31.jpg" />
+    <Content Include="images\p1.jpeg" />
+    <Content Include="images\p2.jpeg" />
+    <Content Include="images\p3.jpeg" />
+    <Content Include="images\p4.jpeg" />
+    <Content Include="images\p5.jpeg" />
+    <Content Include="images\pexels-photo-11847964.jpeg" />
+    <Content Include="images\pexels-photo-14064751.jpeg" />
+    <Content Include="images\jaipur_header.jpeg" />
+    <Content Include="images\pexels-photo-1588032.jpeg" />
+    <Content Include="images\jaipur_jodhpur.jpeg" />
+    <Content Include="images\pexels-photo-3581369.jpeg" />
+    <Content Include="images\pexels-photo-797824.jpeg" />
+    <Content Include="images\pexels-photo-9179927 %282%29.jpeg" />
+    <Content Include="images\pexels-photo-9404692.jpeg" />
+    <Content Include="images\pexels-photo-949194 %281%29.jpeg" />
+    <Content Include="images\po %281%29.jpg" />
+    <Content Include="images\po %282%29.jpg" />
+    <Content Include="images\q.jpg" />
+    <Content Include="images\raj1.jpg" />
+    <Content Include="images\sh.jpg" />
+    <Content Include="images\sign_in.jpg" />
+    <Content Include="images\sign_up.jpg" />
+    <Content Include="images\slider1.jpeg" />
+    <Content Include="images\slider2.jpeg" />
+    <Content Include="images\slider3.jpeg" />
+    <Content Include="images\snownoida.jpg" />
+    <Content Include="images\ss.jpg" />
+    <Content Include="images\sunrise.jpg" />
+    <Content Include="images\t.jpeg" />
+    <Content Include="images\tajmahal.jpeg" />
+    <Content Include="images\tajmahalaagra.jpg" />
+    <Content Include="images\tm %281%29.jpg" />
+    <Content Include="images\tt %281%29.jpeg" />
+    <Content Include="images\u1 %281%29.jpeg" />
+    <Content Include="images\u1.jpeg" />
+    <Content Include="images\u1.jpg" />
+    <Content Include="images\u2.jpeg" />
+    <Content Include="images\u2.jpg" />
+    <Content Include="images\u3.jpg" />
+    <Content Include="images\u4.jpeg" />
+    <Content Include="images\u5.jpeg" />
+    <Content Include="images\udaipur1.jpeg" />
+    <Content Include="images\udaipur_jodhpur.jpeg" />
+    <Content Include="images\udaipur_mabu.jpeg" />
+    <Content Include="images\ujja1.jpeg" />
+    <Content Include="images\ujja3.jpeg" />
+    <Content Include="images\ujjain.jpeg" />
+    <Content Include="images\ujjan.jpeg" />
+    <Content Include="images\ujjan1.jpeg" />
+    <Content Include="images\ujjan12.jpeg" />
+    <Content Include="images\ujjan2.jpeg" />
+    <Content Include="images\uk1.jpg" />
+    <Content Include="images\up1.jpg" />
+    <Content Include="images\upp__hd.jpeg" />
+    <Content Include="images\up_hd.jpg" />
+    <Content Include="images\up_home.jpeg" />
+    <Content Include="images\up__hd.jpeg" />
+    <Content Include="images\uttar.jpeg" />
+    <Content Include="images\var.jpeg" />
+    <Content Include="images\varanasi.jpg" />
+    <Content Include="images\w.jpg" />
+    <Content Include="images\w1.jpg" />
+    <Content Include="images\w2.jpeg" />
+    <Content Include="images\w3.jpg" />
+    <Content Include="images\w4.jpg" />
+    <Content Include="images\wa.jpg" />
+    <Content Include="images\wa2.jpg" />
+    <Content Include="images\wa3.jpg" />
+    <Content Include="images\wa4.jpeg" />
+    <Content Include="indore1.aspx" />
+    <Content Include="indore2.aspx" />
+    <Content Include="indore_home.aspx" />
+    <Content Include="itinerary_table.aspx" />
+    <Content Include="itinerary_table_insert.aspx" />
+    <Content Include="jaipur.aspx" />
+    <Content Include="jaipur_city_tour.aspx" />
+    <Content Include="jaipur_jodhpur_jaisalmer.aspx" />
+    <Content Include="jaipur_pushkar.aspx" />
+    <Content Include="jaipur_udaipur.aspx" />
+    <Content Include="jaisalmer.aspx" />
+    <Content Include="jaisalmer_city.aspx" />
+    <Content Include="jaisalmer_jodhpur.aspx" />
+    <Content Include="jaisalmer_mountabu.aspx" />
+    <Content Include="jodhpur.aspx" />
+    <Content Include="jodhpur_city.aspx" />
+    <Content Include="jodhpur_jaisalmer.aspx" />
+    <Content Include="k1.aspx" />
+    <Content Include="k2.aspx" />
+    <Content Include="k3.aspx" />
+    <Content Include="kerala_home.aspx" />
+    <Content Include="kochi.aspx" />
+    <Content Include="kochi_home.aspx" />
+    <Content Include="l1.aspx" />
+    <Content Include="l2.aspx" />
+    <Content Include="l3.aspx" />
+    <Content Include="l4.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="login2.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="lonavala_home.aspx" />
+    <Content Include="m1.aspx" />
+    <Content Include="m2.aspx" />
+    <Content Include="m3.aspx" />
+    <Content Include="maharashtra.aspx" />
+    <Content Include="mathuraagra2.aspx" />
+    <Content Include="mathurahome.aspx" />
+    <Content Include="mp_home.aspx" />
+    <Content Include="mumbai.aspx" />
+    <Content Include="mumbai1.aspx" />
+    <Content Include="mumbai2.aspx" />
+    <Content Include="mumbai3.aspx" />
+    <Content Include="mumbai4.aspx" />
+    <Content Include="munnar.aspx" />
+    <Content Include="munnar_sightseeing.aspx" />
+    <Content Include="mussoorie.aspx" />
+    <Content Include="mysteryroom2.aspx" />
+    <Content Include="nanital1.aspx" />
+    <Content Include="nanital2.aspx" />
+    <Content Include="nashik1.aspx" />
+    <Content Include="nashik2.aspx" />
+    <Content Include="nashik3.aspx" />
+    <Content Include="nashik4.aspx" />
+    <Content Include="nanital.aspx" />
+    <Content Include="nashik_home.aspx" />
+    <Content Include="Noida_home.aspx" />
+    <Content Include="om1.aspx" />
+    <Content Include="om2.aspx" />
+    <Content Include="om_home.aspx" />
+    <Content Include="p1.aspx" />
+    <Content Include="p2.aspx" />
+    <Content Include="p3.aspx" />
+    <Content Include="p4.aspx" />
+    <Content Include="pune_home.aspx" />
+    <Content Include="rajasthan_home.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="rocksportnoida.aspx" />
+    <Content Include="snowmastinoida2.aspx" />
+    <Content Include="sunrise1.aspx" />
+    <Content Include="tajmahalagra3.aspx" />
+    <Content Include="tajmahal.aspx" />
+    <Content Include="thiru.aspx" />
+    <Content Include="thiru1.aspx" />
+    <Content Include="thiru2.aspx" />
+    <Content Include="udaipur.aspx" />
+    <Content Include="udaipur_city_tour.aspx" />
+    <Content Include="udaipur_jodhpur.aspx" />
+    <Content Include="udaipur_jodhpur_jaisalmer.aspx" />
+    <Content Include="udaipur_mountabu.aspx" />
+    <Content Include="ujjain1.aspx" />
+    <Content Include="ujjain2.aspx" />
+    <Content Include="ujjain_home.aspx" />
+    <Content Include="up_cards.aspx" />
+    <Content Include="user_table.aspx" />
+    <Content Include="uttarakhand.aspx" />
+    <Content Include="varanasi_home.aspx" />
+    <Content Include="w1.aspx" />
+    <Content Include="w2.aspx" />
+    <Content Include="w3.aspx" />
+    <Content Include="w4.aspx" />
+    <Content Include="wayanad_home.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a1_iternary.aspx.cs">
+      <DependentUpon>a1_iternary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="a1_iternary.aspx.designer.cs">
+      <DependentUpon>a1_iternary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="a2.aspx.cs">
+      <DependentUpon>a2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="a2.aspx.designer.cs">
+      <DependentUpon>a2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="a3.aspx.cs">
+      <DependentUpon>a3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="a3.aspx.designer.cs">
+      <DependentUpon>a3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about_us.aspx.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_us.aspx.designer.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_table.aspx.cs">
+      <DependentUpon>admin_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_table.aspx.designer.cs">
+      <DependentUpon>admin_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_table_insert.aspx.cs">
+      <DependentUpon>admin_table_insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_table_insert.aspx.designer.cs">
+      <DependentUpon>admin_table_insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advnoida1.aspx.cs">
+      <DependentUpon>advnoida1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advnoida1.aspx.designer.cs">
+      <DependentUpon>advnoida1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agrafort1.aspx.cs">
+      <DependentUpon>agrafort1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agrafort1.aspx.designer.cs">
+      <DependentUpon>agrafort1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agramathuravrindavan1.aspx.cs">
+      <DependentUpon>agramathuravrindavan1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agramathuravrindavan1.aspx.designer.cs">
+      <DependentUpon>agramathuravrindavan1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agra_home.aspx.cs">
+      <DependentUpon>agra_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agra_home.aspx.designer.cs">
+      <DependentUpon>agra_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="auli.aspx.cs">
+      <DependentUpon>auli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auli.aspx.designer.cs">
+      <DependentUpon>auli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="banglore_munnar.aspx.cs">
+      <DependentUpon>banglore_munnar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="banglore_munnar.aspx.designer.cs">
+      <DependentUpon>banglore_munnar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bhopal1.aspx.cs">
+      <DependentUpon>bhopal1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bhopal1.aspx.designer.cs">
+      <DependentUpon>bhopal1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bhopal2.aspx.cs">
+      <DependentUpon>bhopal2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bhopal2.aspx.designer.cs">
+      <DependentUpon>bhopal2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bhopal_home.aspx.cs">
+      <DependentUpon>bhopal_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bhopal_home.aspx.designer.cs">
+      <DependentUpon>bhopal_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill.aspx.cs">
+      <DependentUpon>bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill.aspx.designer.cs">
+      <DependentUpon>bill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill1.aspx.cs">
+      <DependentUpon>bill1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill1.aspx.designer.cs">
+      <DependentUpon>bill1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill2.aspx.cs">
+      <DependentUpon>bill2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill2.aspx.designer.cs">
+      <DependentUpon>bill2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill_page.aspx.cs">
+      <DependentUpon>bill_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill_page.aspx.designer.cs">
+      <DependentUpon>bill_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill_page2.aspx.cs">
+      <DependentUpon>bill_page2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill_page2.aspx.designer.cs">
+      <DependentUpon>bill_page2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill_page3.aspx.cs">
+      <DependentUpon>bill_page3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill_page3.aspx.designer.cs">
+      <DependentUpon>bill_page3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill_page4.aspx.cs">
+      <DependentUpon>bill_page4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill_page4.aspx.designer.cs">
+      <DependentUpon>bill_page4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bill_table.aspx.cs">
+      <DependentUpon>bill_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bill_table.aspx.designer.cs">
+      <DependentUpon>bill_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="camelsafari_jodhpur.aspx.cs">
+      <DependentUpon>camelsafari_jodhpur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="camelsafari_jodhpur.aspx.designer.cs">
+      <DependentUpon>camelsafari_jodhpur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="culturalvaranasi3.aspx.cs">
+      <DependentUpon>culturalvaranasi3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="culturalvaranasi3.aspx.designer.cs">
+      <DependentUpon>culturalvaranasi3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="desert_jodhpur.aspx.cs">
+      <DependentUpon>desert_jodhpur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="desert_jodhpur.aspx.designer.cs">
+      <DependentUpon>desert_jodhpur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dynamic_jaipur.aspx.cs">
+      <DependentUpon>dynamic_jaipur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dynamic_jaipur.aspx.designer.cs">
+      <DependentUpon>dynamic_jaipur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fatehpuragra4.aspx.cs">
+      <DependentUpon>fatehpuragra4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fatehpuragra4.aspx.designer.cs">
+      <DependentUpon>fatehpuragra4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_1.aspx.cs">
+      <DependentUpon>feedback_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback_1.aspx.designer.cs">
+      <DependentUpon>feedback_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_2.aspx.cs">
+      <DependentUpon>feedback_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback_2.aspx.designer.cs">
+      <DependentUpon>feedback_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_table.aspx.cs">
+      <DependentUpon>feedback_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback_table.aspx.designer.cs">
+      <DependentUpon>feedback_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="foodwalkvaranasi2.aspx.cs">
+      <DependentUpon>foodwalkvaranasi2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="foodwalkvaranasi2.aspx.designer.cs">
+      <DependentUpon>foodwalkvaranasi2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="footer.aspx.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="footer.aspx.designer.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forget_password.aspx.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forget_password.aspx.designer.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="h1.aspx.cs">
+      <DependentUpon>h1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="h1.aspx.designer.cs">
+      <DependentUpon>h1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="h2.aspx.cs">
+      <DependentUpon>h2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="h2.aspx.designer.cs">
+      <DependentUpon>h2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="h3.aspx.cs">
+      <DependentUpon>h3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="h3.aspx.designer.cs">
+      <DependentUpon>h3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="halfdayvaranasi4.aspx.cs">
+      <DependentUpon>halfdayvaranasi4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="halfdayvaranasi4.aspx.designer.cs">
+      <DependentUpon>halfdayvaranasi4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="halfday_jaisalmer.aspx.cs">
+      <DependentUpon>halfday_jaisalmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="halfday_jaisalmer.aspx.designer.cs">
+      <DependentUpon>halfday_jaisalmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="haridwar.aspx.cs">
+      <DependentUpon>haridwar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="haridwar.aspx.designer.cs">
+      <DependentUpon>haridwar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="header.aspx.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="header.aspx.designer.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home2.aspx.cs">
+      <DependentUpon>home2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home2.aspx.designer.cs">
+      <DependentUpon>home2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homestay_munnar.aspx.cs">
+      <DependentUpon>homestay_munnar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homestay_munnar.aspx.designer.cs">
+      <DependentUpon>homestay_munnar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indore1.aspx.cs">
+      <DependentUpon>indore1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indore1.aspx.designer.cs">
+      <DependentUpon>indore1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indore2.aspx.cs">
+      <DependentUpon>indore2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indore2.aspx.designer.cs">
+      <DependentUpon>indore2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indore_home.aspx.cs">
+      <DependentUpon>indore_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indore_home.aspx.designer.cs">
+      <DependentUpon>indore_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="itinerary_table.aspx.cs">
+      <DependentUpon>itinerary_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="itinerary_table.aspx.designer.cs">
+      <DependentUpon>itinerary_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="itinerary_table_insert.aspx.cs">
+      <DependentUpon>itinerary_table_insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="itinerary_table_insert.aspx.designer.cs">
+      <DependentUpon>itinerary_table_insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur.aspx.cs">
+      <DependentUpon>jaipur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur.aspx.designer.cs">
+      <DependentUpon>jaipur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur_city_tour.aspx.cs">
+      <DependentUpon>jaipur_city_tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur_city_tour.aspx.designer.cs">
+      <DependentUpon>jaipur_city_tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur_jodhpur_jaisalmer.aspx.cs">
+      <DependentUpon>jaipur_jodhpur_jaisalmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur_jodhpur_jaisalmer.aspx.designer.cs">
+      <DependentUpon>jaipur_jodhpur_jaisalmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur_pushkar.aspx.cs">
+      <DependentUpon>jaipur_pushkar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur_pushkar.aspx.designer.cs">
+      <DependentUpon>jaipur_pushkar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur_udaipur.aspx.cs">
+      <DependentUpon>jaipur_udaipur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur_udaipur.aspx.designer.cs">
+      <DependentUpon>jaipur_udaipur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaisalmer.aspx.cs">
+      <DependentUpon>jaisalmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaisalmer.aspx.designer.cs">
+      <DependentUpon>jaisalmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaisalmer_city.aspx.cs">
+      <DependentUpon>jaisalmer_city.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaisalmer_city.aspx.designer.cs">
+      <DependentUpon>jaisalmer_city.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaisalmer_jodhpur.aspx.cs">
+      <DependentUpon>jaisalmer_jodhpur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaisalmer_jodhpur.aspx.designer.cs">
+      <DependentUpon>jaisalmer_jodhpur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaisalmer_mountabu.aspx.cs">
+      <DependentUpon>jaisalmer_mountabu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaisalmer_mountabu.aspx.designer.cs">
+      <DependentUpon>jaisalmer_mountabu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jodhpur.aspx.cs">
+      <DependentUpon>jodhpur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jodhpur.aspx.designer.cs">
+      <DependentUpon>jodhpur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jodhpur_city.aspx.cs">
+      <DependentUpon>jodhpur_city.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jodhpur_city.aspx.designer.cs">
+      <DependentUpon>jodhpur_city.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jodhpur_jaisalmer.aspx.cs">
+      <DependentUpon>jodhpur_jaisalmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jodhpur_jaisalmer.aspx.designer.cs">
+      <DependentUpon>jodhpur_jaisalmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="k1.aspx.cs">
+      <DependentUpon>k1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="k1.aspx.designer.cs">
+      <DependentUpon>k1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="k2.aspx.cs">
+      <DependentUpon>k2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="k2.aspx.designer.cs">
+      <DependentUpon>k2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="k3.aspx.cs">
+      <DependentUpon>k3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="k3.aspx.designer.cs">
+      <DependentUpon>k3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kerala_home.aspx.cs">
+      <DependentUpon>kerala_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kerala_home.aspx.designer.cs">
+      <DependentUpon>kerala_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kochi.aspx.cs">
+      <DependentUpon>kochi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kochi.aspx.designer.cs">
+      <DependentUpon>kochi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kochi_home.aspx.cs">
+      <DependentUpon>kochi_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kochi_home.aspx.designer.cs">
+      <DependentUpon>kochi_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="l1.aspx.cs">
+      <DependentUpon>l1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="l1.aspx.designer.cs">
+      <DependentUpon>l1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="l2.aspx.cs">
+      <DependentUpon>l2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="l2.aspx.designer.cs">
+      <DependentUpon>l2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="l3.aspx.cs">
+      <DependentUpon>l3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="l3.aspx.designer.cs">
+      <DependentUpon>l3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="l4.aspx.cs">
+      <DependentUpon>l4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="l4.aspx.designer.cs">
+      <DependentUpon>l4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login2.aspx.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login2.aspx.designer.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lonavala_home.aspx.cs">
+      <DependentUpon>lonavala_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lonavala_home.aspx.designer.cs">
+      <DependentUpon>lonavala_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m1.aspx.cs">
+      <DependentUpon>m1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m1.aspx.designer.cs">
+      <DependentUpon>m1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m2.aspx.cs">
+      <DependentUpon>m2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m2.aspx.designer.cs">
+      <DependentUpon>m2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m3.aspx.cs">
+      <DependentUpon>m3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m3.aspx.designer.cs">
+      <DependentUpon>m3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maharashtra.aspx.cs">
+      <DependentUpon>maharashtra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maharashtra.aspx.designer.cs">
+      <DependentUpon>maharashtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mathuraagra2.aspx.cs">
+      <DependentUpon>mathuraagra2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mathuraagra2.aspx.designer.cs">
+      <DependentUpon>mathuraagra2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mathurahome.aspx.cs">
+      <DependentUpon>mathurahome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mathurahome.aspx.designer.cs">
+      <DependentUpon>mathurahome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mp_home.aspx.cs">
+      <DependentUpon>mp_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mp_home.aspx.designer.cs">
+      <DependentUpon>mp_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai.aspx.cs">
+      <DependentUpon>mumbai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai.aspx.designer.cs">
+      <DependentUpon>mumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai1.aspx.cs">
+      <DependentUpon>mumbai1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai1.aspx.designer.cs">
+      <DependentUpon>mumbai1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai2.aspx.cs">
+      <DependentUpon>mumbai2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai2.aspx.designer.cs">
+      <DependentUpon>mumbai2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai3.aspx.cs">
+      <DependentUpon>mumbai3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai3.aspx.designer.cs">
+      <DependentUpon>mumbai3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai4.aspx.cs">
+      <DependentUpon>mumbai4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai4.aspx.designer.cs">
+      <DependentUpon>mumbai4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="munnar.aspx.cs">
+      <DependentUpon>munnar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="munnar.aspx.designer.cs">
+      <DependentUpon>munnar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="munnar_sightseeing.aspx.cs">
+      <DependentUpon>munnar_sightseeing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="munnar_sightseeing.aspx.designer.cs">
+      <DependentUpon>munnar_sightseeing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mussoorie.aspx.cs">
+      <DependentUpon>mussoorie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mussoorie.aspx.designer.cs">
+      <DependentUpon>mussoorie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mysteryroom2.aspx.cs">
+      <DependentUpon>mysteryroom2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mysteryroom2.aspx.designer.cs">
+      <DependentUpon>mysteryroom2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nanital1.aspx.cs">
+      <DependentUpon>nanital1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nanital1.aspx.designer.cs">
+      <DependentUpon>nanital1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nanital2.aspx.cs">
+      <DependentUpon>nanital2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nanital2.aspx.designer.cs">
+      <DependentUpon>nanital2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nashik1.aspx.cs">
+      <DependentUpon>nashik1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nashik1.aspx.designer.cs">
+      <DependentUpon>nashik1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nashik2.aspx.cs">
+      <DependentUpon>nashik2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nashik2.aspx.designer.cs">
+      <DependentUpon>nashik2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nashik3.aspx.cs">
+      <DependentUpon>nashik3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nashik3.aspx.designer.cs">
+      <DependentUpon>nashik3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nashik4.aspx.cs">
+      <DependentUpon>nashik4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nashik4.aspx.designer.cs">
+      <DependentUpon>nashik4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nanital.aspx.cs">
+      <DependentUpon>nanital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nanital.aspx.designer.cs">
+      <DependentUpon>nanital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nashik_home.aspx.cs">
+      <DependentUpon>nashik_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nashik_home.aspx.designer.cs">
+      <DependentUpon>nashik_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Noida_home.aspx.cs">
+      <DependentUpon>Noida_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Noida_home.aspx.designer.cs">
+      <DependentUpon>Noida_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="om1.aspx.cs">
+      <DependentUpon>om1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="om1.aspx.designer.cs">
+      <DependentUpon>om1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="om2.aspx.cs">
+      <DependentUpon>om2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="om2.aspx.designer.cs">
+      <DependentUpon>om2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="om_home.aspx.cs">
+      <DependentUpon>om_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="om_home.aspx.designer.cs">
+      <DependentUpon>om_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p1.aspx.cs">
+      <DependentUpon>p1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p1.aspx.designer.cs">
+      <DependentUpon>p1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p2.aspx.cs">
+      <DependentUpon>p2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p2.aspx.designer.cs">
+      <DependentUpon>p2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p3.aspx.cs">
+      <DependentUpon>p3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p3.aspx.designer.cs">
+      <DependentUpon>p3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p4.aspx.cs">
+      <DependentUpon>p4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p4.aspx.designer.cs">
+      <DependentUpon>p4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pune_home.aspx.cs">
+      <DependentUpon>pune_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pune_home.aspx.designer.cs">
+      <DependentUpon>pune_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rajasthan_home.aspx.cs">
+      <DependentUpon>rajasthan_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rajasthan_home.aspx.designer.cs">
+      <DependentUpon>rajasthan_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rocksportnoida.aspx.cs">
+      <DependentUpon>rocksportnoida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rocksportnoida.aspx.designer.cs">
+      <DependentUpon>rocksportnoida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="snowmastinoida2.aspx.cs">
+      <DependentUpon>snowmastinoida2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="snowmastinoida2.aspx.designer.cs">
+      <DependentUpon>snowmastinoida2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sunrise1.aspx.cs">
+      <DependentUpon>sunrise1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sunrise1.aspx.designer.cs">
+      <DependentUpon>sunrise1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tajmahalagra3.aspx.cs">
+      <DependentUpon>tajmahalagra3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tajmahalagra3.aspx.designer.cs">
+      <DependentUpon>tajmahalagra3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tajmahal.aspx.cs">
+      <DependentUpon>tajmahal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tajmahal.aspx.designer.cs">
+      <DependentUpon>tajmahal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thiru.aspx.cs">
+      <DependentUpon>thiru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thiru.aspx.designer.cs">
+      <DependentUpon>thiru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thiru1.aspx.cs">
+      <DependentUpon>thiru1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thiru1.aspx.designer.cs">
+      <DependentUpon>thiru1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thiru2.aspx.cs">
+      <DependentUpon>thiru2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thiru2.aspx.designer.cs">
+      <DependentUpon>thiru2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udaipur.aspx.cs">
+      <DependentUpon>udaipur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udaipur.aspx.designer.cs">
+      <DependentUpon>udaipur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udaipur_city_tour.aspx.cs">
+      <DependentUpon>udaipur_city_tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udaipur_city_tour.aspx.designer.cs">
+      <DependentUpon>udaipur_city_tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udaipur_jodhpur.aspx.cs">
+      <DependentUpon>udaipur_jodhpur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udaipur_jodhpur.aspx.designer.cs">
+      <DependentUpon>udaipur_jodhpur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udaipur_jodhpur_jaisalmer.aspx.cs">
+      <DependentUpon>udaipur_jodhpur_jaisalmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udaipur_jodhpur_jaisalmer.aspx.designer.cs">
+      <DependentUpon>udaipur_jodhpur_jaisalmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="udaipur_mountabu.aspx.cs">
+      <DependentUpon>udaipur_mountabu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="udaipur_mountabu.aspx.designer.cs">
+      <DependentUpon>udaipur_mountabu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ujjain1.aspx.cs">
+      <DependentUpon>ujjain1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ujjain1.aspx.designer.cs">
+      <DependentUpon>ujjain1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ujjain2.aspx.cs">
+      <DependentUpon>ujjain2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ujjain2.aspx.designer.cs">
+      <DependentUpon>ujjain2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ujjain_home.aspx.cs">
+      <DependentUpon>ujjain_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ujjain_home.aspx.designer.cs">
+      <DependentUpon>ujjain_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="up_home.aspx.cs">
+      <DependentUpon>up_cards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="up_home.aspx.designer.cs">
+      <DependentUpon>up_cards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_table.aspx.cs">
+      <DependentUpon>user_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_table.aspx.designer.cs">
+      <DependentUpon>user_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uttarakhand.aspx.cs">
+      <DependentUpon>uttarakhand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uttarakhand.aspx.designer.cs">
+      <DependentUpon>uttarakhand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="varanasi_home.aspx.cs">
+      <DependentUpon>varanasi_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="varanasi_home.aspx.designer.cs">
+      <DependentUpon>varanasi_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="w1.aspx.cs">
+      <DependentUpon>w1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="w1.aspx.designer.cs">
+      <DependentUpon>w1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="w2.aspx.cs">
+      <DependentUpon>w2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="w2.aspx.designer.cs">
+      <DependentUpon>w2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="w3.aspx.cs">
+      <DependentUpon>w3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="w3.aspx.designer.cs">
+      <DependentUpon>w3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="w4.aspx.cs">
+      <DependentUpon>w4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="w4.aspx.designer.cs">
+      <DependentUpon>w4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wayanad_home.aspx.cs">
+      <DependentUpon>wayanad_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wayanad_home.aspx.designer.cs">
+      <DependentUpon>wayanad_home.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60422</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44328/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
